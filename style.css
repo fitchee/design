@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Forum:wght@400&family=Jost:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
+html,body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Crimson Text', serif;
+    position: relative;
     background-color: rgb(245, 245, 245);
-    overflow-x: hidden;
 }
 
 
