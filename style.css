@@ -1,0 +1,266 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Forum:wght@400&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Crimson Text', serif;
+    background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
+}
+
+
+
+/*
+HEADER STYLING
+*/
+.header-wrapper {
+}
+
+.masthead,.navbar {
+    background-color: #fff;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    padding: 0;
+}
+
+.masthead h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color:#ff304f;
+}
+
+.masthead .title {
+    height: 8rem;
+}
+
+.infobar {
+    background-color: #000d1d;
+    margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+    font-family: Jost,sans-serif;
+    padding: 1rem;
+    margin: 0 -1rem 2rem -1rem;
+}
+
+.navbar-shadow {
+    box-shadow: 0 0.025rem 0.5rem 0.05rem rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.active {
+    color: #ff1500 !important;
+}
+
+.navbar a:hover {
+    color:#ff1500;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 4rem);
+    height: 2px;
+    bottom: -8px;
+    left: 2rem;
+    background-color: #ff1500;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover::before {
+    visibility: visible;
+    transform: scaleX(0.85);
+}
+
+.navbar a i {
+    height: 1rem;
+}
+
+.navbar a span {
+    padding-left: 14px;
+}
+
+
+
+/*
+ARTICLE STYLING
+*/
+
+.article {
+    position: relative;
+    margin: 1rem;
+}
+
+.article h1 {
+    font-family: Jost;
+    font-weight: 300;
+}
+
+.article-sm h1 {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.article-lg .text-wrapper {
+    padding: 0 2rem 2rem 1rem;
+}
+
+.article .img-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.article img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-lg img {
+    height: 20rem;
+}
+
+.article-sm img {
+    height: 10rem;
+}
+
+.article-lg .caption {
+    font-family: Jost,sans-serif;
+    font-size: 0.9rem;
+    position: absolute;
+    background-color: #ffd615;
+    color: #000;
+    margin-left: -1rem;
+    max-width: 70%;
+    bottom: -1rem;
+    padding: 8px 12px 8px 12px;
+}
+
+.article-sm .caption {
+    font-family: Jost,sans-serif;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+a.overlay {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/* 
+SIDEBAR STYLING (COLUMNS AND SPORT)
+*/
+
+.opinion-wrapper,.sport-wrapper,.nib-wrapper {
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.opinion-wrapper {
+    background-color: #fff4e3;
+}
+
+.sport-wrapper .title,.opinion-wrapper .title,.nib-wrapper .title {
+    padding: 1rem;
+    position: relative;
+}
+
+.sport-wrapper .title,.opinion-wrapper .title {
+    border-bottom: 1px solid #000;
+}
+
+.nib-wrapper .title {
+    border-bottom: 1px solid #fff;
+}
+
+.sport-wrapper .title h1,.opinion-wrapper .title h1,.nib-wrapper .title h1 {
+    font-family: Jost,sans-serif;
+    font-weight: 500;
+}
+
+.opinion-wrapper .body,.sport-wrapper .body {
+    border-top: 1px solid #000;
+    margin-top: 5px;
+}
+
+.opinion-wrapper .column {
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid #888;
+    position: relative;
+}
+
+.opinion-wrapper .column .author {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.opinion-wrapper .column .headline {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.nib-wrapper {
+    background-color: #071e3d;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.nib-wrapper .body {
+    border-top: 1px solid #fff;
+    margin-top: 5px;
+}
+
+.nib-wrapper .nib {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #bbb;
+}
+
+.sport-wrapper {
+    background-color: #fff;
+}
+
+.sport-wrapper .section {
+    margin: 5px 0;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+.sport-wrapper .section h2 {
+    padding: 1rem 2rem 0 2rem;
+    text-decoration: underline;
+}
+
+.sport-wrapper .fixture {
+    padding: 1rem 2rem;
+    font-family: Jost;
+    font-weight: 300;
+}
+
+.sport-wrapper .fixture .team {
+    font-weight: 400;
+}
