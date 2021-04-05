@@ -10,119 +10,159 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-wrapper container-fluid">
-        <div class="header-wrapper row">
-            <div class="infobar row d-none d-lg-inline">
-                <div class="col"></div>
-                <div class="col-2">
-                    Sunday 4 March 2021
-                </div>
-                <div class="col-8"></div>
-                <div class="col-2">
-                    
-                </div>
-                <div class="col"></div>
+    <div class="header-wrapper row">
+        <div class="infobar row d-none d-lg-inline">
+            <div class="col"></div>
+            <div class="col-2">
+                Sunday 4 March 2021
             </div>
+            <div class="col-8"></div>
+            <div class="col-2">
+                
+            </div>
+            <div class="col"></div>
+        </div>
 
-            <div class="header col-12">
-                <div class="masthead row">
-                    <div class="title-wrapper text-center">
-                        <img src="masthead.png" alt="Masthead" class="title img-fluid">
-                    </div>
+        <div class="header col-12">
+            <div class="masthead row">
+                <div class="title-wrapper text-center">
+                    <img src="masthead.png" alt="Masthead" class="title img-fluid">
                 </div>
             </div>
         </div>
-        <div class="navbar row sticky-top" id="navbar">
-            <div class="col-xl"></div>
-            <div class="col-xl-10">
-                <a href="" class="active">
-                    <i class="bi bi-house"></i>
-                    <span>
-                        Home
-                    </span>
-                </a>
+    </div>
+    <div class="navbar row sticky-top" id="navbar">
+        <div class="col d-xl-inline d-none"></div>
+        <div class="col-xxl-10 col-12">
+            <a href="" class="active">
+                <i class="bi bi-house"></i>
+                <span>
+                    Home
+                </span>
+            </a>
 
-                <a href="">
-                    <i class="bi bi-building"></i>
-                    <span>
-                        School
-                    </span>
-                </a>
+            <a href="" class="d-md-inline d-none">
+                <i class="bi bi-building"></i>
+                <span>
+                    School
+                </span>
+            </a>
 
-                <a href="">
-                    <i class="bi bi-globe2"></i>
-                    <span>
-                        Global
-                    </span>
-                </a>
+            <a href="" class="d-md-inline d-none">
+                <i class="bi bi-globe2"></i>
+                <span>
+                    Global
+                </span>
+            </a>
 
-                <a href="">
-                    <i class="bi bi-trophy"></i>
-                    <span>
-                        Sport
-                    </span>
-                </a>
+            <a href="" class="d-md-inline d-none">
+                <i class="bi bi-trophy"></i>
+                <span>
+                    Sport
+                </span>
+            </a>
 
-                <a href="">
-                    <i class="bi bi-voicemail"></i>
-                    <span>
-                        Contact
-                    </span>
-                </a>
+            <a href="" class="d-lg-inline d-none">
+                <i class="bi bi-voicemail"></i>
+                <span>
+                    Contact
+                </span>
+            </a>
 
-                <a href="">
-                    <i class="bi bi-pen"></i>
-                    <span>
-                        Write
-                    </span>
-                </a>
- 
-                <a href="">
-                    <i class="bi bi-question"></i>
-                    <span>
-                        About
-                    </span>
-                </a>
-           </div>
-            <div class="col-xl"></div>
+            <a href="" class="d-xl-inline d-none">
+                <i class="bi bi-pen"></i>
+                <span>
+                    Write
+                </span>
+            </a>
+
+            <a href="" class="d-xl-inline d-none">
+                <i class="bi bi-question"></i>
+                <span>
+                    About
+                </span>
+            </a>
+            <a href="javascript:void(0);" class="icon d-xl-none d-inline" onclick="navbarMenu()">
+                <i class="bi bi-three-dots"></i>
+            </a>
         </div>
-        <div class="row body-wrapper">
+        <div class="dropdown-nav" id=dropdown>
+            <a href="" class="d-md-none d-inline">
+                <i class="bi bi-building"></i>
+                <span>
+                    School
+                </span>
+            </a>
+
+            <a href="" class="d-md-none d-inline">
+                <i class="bi bi-globe2"></i>
+                <span>
+                    Global
+                </span>
+            </a>
+
+            <a href="" class="d-md-none d-inline">
+                <i class="bi bi-trophy"></i>
+                <span>
+                    Sport
+                </span>
+            </a>
+            <a href="" class="d-lg-none d-inline">
+                <i class="bi bi-voicemail"></i>
+                <span>
+                    Contact
+                </span>
+            </a>
+
+            <a href="" class="d-xl-none d-inline">
+                <i class="bi bi-pen"></i>
+                <span>
+                    Write
+                </span>
+            </a>
+
+            <a href="" class="d-xl-none d-inline">
+                <i class="bi bi-question"></i>
+                <span>
+                    About
+                </span>
+            </a>               
+        </div>
+        <div class="col d-xl-inline d-none"></div>
+    </div>
+    <div class="container-fluid body-wrapper">
+        <div class="row">
             <div class="col-xxl col-xl col-lg"></div>
             <div class="body col-xxl-7 col-xl-10 col-12">
                 <div class="row">
                     <div class="col-md-6 col-12">
-                        <!-- <div class="row"> -->
-                            <div class="article article-lg">
-                                <div class="img-wrapper">
-                                    <img src="https://images.unsplash.com/photo-1617349462928-6274a872170c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" alt="Man painting">
-                                    <div class="caption">
-                                        Jacob Fisher   4 April   Coronavirus
-                                    </div>
+                        <div class="article article-lg">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1617349462928-6274a872170c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80" alt="Man painting">
+                                <div class="caption">
+                                    Jacob Fisher   4 April   Coronavirus
                                 </div>
-                                <div class="text-wrapper">
-                                    <h1>
-                                        Virus variants threaten to draw out the pandemic, scientists say
-                                    </h1>
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem cum, accusantium cupiditate sint minima consequatur perferendis! Alias sequi dignissimos iste impedit quidem quam minus assumenda corporis, vitae tenetur odit. Porro.
-                                    </p>
-                                </div>
-                                <a href="" class="overlay"></a>
                             </div>
-                        <!-- </div> -->
+                            <div class="text-wrapper">
+                                <h1>
+                                    Virus variants threaten to draw out the pandemic, scientists say
+                                </h1>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem cum, accusantium cupiditate sint minima consequatur perferendis! Alias sequi dignissimos iste impedit quidem quam minus assumenda corporis, vitae tenetur odit. Porro.
+                                </p>
+                            </div>
+                            <a href="" class="overlay"></a>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6 col-12">
                                 <div class="article article-sm">
                                     <div class="img-wrapper">
                                         <img src="https://images.unsplash.com/photo-1617339648296-88d289b33d33?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                                        <div class="caption">
-                                            Jacob Fisher   4 April
-                                        </div>
                                     </div>
                                     <div class="text-wrapper">
-                                        <h1>Hello</h1>
+                                        <h1>Everyone in England to be offered twice-weekly Covid tests, PM to say</h1>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere, dignissimos voluptas dolorum voluptatibus consequatur suscipit sequi pariatur dolor qui iure animi fugit at exercitationem, libero sit! Dolore, veniam est.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                         </p>
                                     </div>
                                     <a href="" class="overlay"></a>
@@ -135,11 +175,8 @@
                                     </div>
                                     <div class="text-wrapper">
                                         <h1>Forget about irony, witty writing is all it takes to capture a child's imagination</h1>
-                                        <div class="caption">
-                                            Jacob Fisher   4 April
-                                        </div>
                                         <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere, dignissimos voluptas dolorum voluptatibus consequatur suscipit sequi pariatur dolor qui iure animi fugit at exercitationem, libero sit! Dolore, veniam est.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. .
                                         </p>
                                     </div>
                                     <a href="" class="overlay"></a>
@@ -239,14 +276,42 @@
             </div>
             <div class="col-xxl col-xl col-lg"></div>
         </div>
-        <div class="footer-wrapper row">
-            <div class="col-xxl col-xl"></div>
-            <div class="col-xxl-7 col-xl-10 col-12"></div>
+        <div class="row banner-wrapper" style="background-color: rgba(255,214,21,0.4);">
+            <div class="col"></div>
+            <div class="col-xxl-7 col-xl-10 col-12 banner" style="background-color: rgb(255, 214, 21);">
+                <table class="emoji-wrapper">
+                    <tbody>
+                        <tr>
+                            <td class="align-middle emoji text-center">
+                                📰
+                            </td>
+                            <td class="text text-sm d-md-none d-table-cell">
+                                Write about anything; and get your work published in web and print.
+                            </td>
+                            <td class="text text-lg d-md-table-cell d-none">
+                                Write about anything; and get your work published in web and print.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col"></div>
         </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col col-xxl-7 col-xl-10 col-lg-12">
+                Hello
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="footer-wrapper row">
+        <div class="col-xxl col-xl"></div>
+        <div class="col-xxl-7 col-xl-10 col-12"></div>
     </div>
     <script>
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {addNavbarShadow()};
 
     // Get the navbar
     var navbar = document.getElementById("navbar");
@@ -254,13 +319,23 @@
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
 
-    function myFunction() {
+    function addNavbarShadow() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("navbar-shadow")
         } else {
             navbar.classList.remove("navbar-shadow");
         }
     } 
+
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function navbarMenu() {
+        var x = document.getElementById("dropdown");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
