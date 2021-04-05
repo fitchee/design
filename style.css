@@ -295,7 +295,8 @@ SIDEBAR STYLING (COLUMNS AND SPORT)
 BANNERS
 */
 .banner-wrapper {
-    margin: 3rem initial;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100vw;
     overflow-x: hidden;
 }
