@@ -170,7 +170,7 @@ ARTICLE STYLING
     position: relative;
 }
 
-.heading:before {
+.heading::before {
   content: " ";
   position: absolute;
   z-index: -1;
@@ -475,7 +475,7 @@ EDITOR'S PICKS SIDERBAR
     padding: 0.5rem 2rem 0 2rem;
 }
 
-.editor-picks:before {
+.editor-picks::before {
   content: " ";
   position: absolute;
   z-index: -1;
@@ -490,4 +490,94 @@ EDITOR'S PICKS SIDERBAR
     margin-bottom: 1.1rem;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid #999;
+}
+
+
+
+/*
+FULL ARTICLE
+*/
+
+.full-article {
+    padding: 1rem;
+}
+
+.full-article .img-wrapper {
+    /* position: relative; */
+    /* padding: 0; */
+    margin: 1rem 0 2rem 0;
+}
+
+.full-article .img-wrapper > img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 30rem;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+.full-article .headline-wrapper > .headline {
+    font-weight: 700;
+    /* font-family: "Playfair Display"; */
+    font-family: Jost;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.full-article .headline-wrapper > .byline {
+    display: inline-block;
+}
+
+.full-article .headline-wrapper > .byline > .by {
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.25rem;
+    background-color: #ff1500;
+    /* border-radius: 2px; */
+    text-decoration: none;
+}
+
+.full-article .headline-wrapper > .date {
+    display: inline-block;
+    float: right;
+}
+
+.full-article .standfirst {
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #999;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.full-article .standfirst::before {
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 2px;
+    right: 0;
+    border-bottom: 1px solid #000;
+    position: absolute;
+}
+
+.full-article .standfirst::after {
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: -4px;
+    right: 0;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+}
+
+.full-article .body-wrapper > .body > p {
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+}
+
+.full-article .body-wrapper > .body > p.first {
+    text-indent: 0;
 }
