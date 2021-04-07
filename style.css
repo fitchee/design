@@ -6,7 +6,7 @@ html,body {
 }
 
 body {
-    font-family: 'Crimson Text', serif;
+    font-family: "Crimson Text", serif;
     position: relative;
     background-color: rgb(245, 245, 245);
 }
@@ -21,7 +21,7 @@ HEADER STYLING
 */
 .header-wrapper {
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
 }
 
 .masthead,.navbar {
@@ -52,7 +52,7 @@ HEADER STYLING
 /* NAVBAR */
 
 .navbar {
-    font-family: Jost,sans-serif;
+    font-family: "Jost",sans-serif;
     padding: 1rem;
     overflow-x: unset;
     margin: 0 0 2rem 0;
@@ -122,17 +122,72 @@ HEADER STYLING
 }
 
 
+
+/*
+FOOTER STYLING
+*/
+
+.footer-wrapper {
+    background-color: #000510;
+    color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 3rem 0 0 0;
+    padding: 3rem 0;
+}
+
+.footer-wrapper .editor-details ul,.footer-wrapper .colophon ul {
+    list-style: none;
+    padding: 0;
+    color: #aaa;
+}
+
+.footer-wrapper .editor-details .name {
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.footer-wrapper .editor-details > ul > li > a {
+    color: #888;
+}
+
+.footer-wrapper .colophon a {
+    text-decoration: none;
+    color: #eee;
+}
+
+
+
 /*
 ARTICLE STYLING
 */
 
+.heading {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.heading:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  border-bottom: 1px solid #000;
+}
+
 .article {
     position: relative;
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .article h1 {
-    font-family: Jost;
+    font-family: "Jost",sans-serif;
     font-weight: 300;
 }
 
@@ -164,7 +219,7 @@ ARTICLE STYLING
 }
 
 .article-lg .caption {
-    font-family: Jost,sans-serif;
+    font-family: "Jost",sans-serif;
     font-size: 0.9rem;
     position: absolute;
     background-color: #ffd615;
@@ -176,7 +231,7 @@ ARTICLE STYLING
 }
 
 .article-sm .caption {
-    font-family: Jost,sans-serif;
+    font-family: "Jost",sans-serif;
     font-size: 0.9rem;
     color: #000;
 }
@@ -189,6 +244,54 @@ a.overlay {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.article-no-img {
+    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
+}
+
+.editor-picks .article-no-img.lead {
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #ffd615;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.editor-picks .article-no-img.lead p {
+    margin-bottom: 0;
+}
+
+.article-no-img h1 {
+    font-size: 1.1rem;
+}
+
+.article-no-img p {
+    font-size: 0.9rem;
+}
+
+.article-sm-sideways img {
+    height: 4rem;
+}
+
+.article-sm-sideways .img-wrapper {
+    padding: 0;
+    margin: 0;
+    padding-right: 0.5rem;
+} 
+
+.article-sm-sideways .text-wrapper {
+    padding-left: 1rem;
+    border-left: 1px solid #999;
+}
+
+.article-sm-sideways .text-wrapper h1 {
+    font-family: "Crimson Text",serif;
+    font-size: 1.1rem;
+}
+
+.article-sm-sideways .subject-wrapper {
+    text-align: right;
 }
 
 
@@ -223,7 +326,7 @@ SIDEBAR STYLING (COLUMNS AND SPORT)
 }
 
 .sport-wrapper .title h1,.opinion-wrapper .title h1,.nib-wrapper .title h1 {
-    font-family: Jost,sans-serif;
+    font-family: "Jost",sans-serif;
     font-weight: 500;
 }
 
@@ -280,13 +383,36 @@ SIDEBAR STYLING (COLUMNS AND SPORT)
 }
 
 .sport-wrapper .fixture {
-    padding: 1rem 2rem;
-    font-family: Jost;
+    padding: 0 1rem;
+    font-family: "Jost",sans-serif;
     font-weight: 300;
+    margin: 2rem 2rem;
+    border-left: 2px solid #000;
+}
+
+.sport-wrapper .fixture table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.sport-wrapper .fixture td, .sport-wrapper .fixture th {
+  text-align: left;
 }
 
 .sport-wrapper .fixture .team {
     font-weight: 400;
+}
+
+.sport-wrapper .team-badge img {
+    width: 1.5em;
+}
+
+.sport-wrapper .team-score {
+    text-align: right !important;
+}
+
+.sport-wrapper .fixture .versus {
+    color: #777;
 }
 
 
@@ -294,6 +420,7 @@ SIDEBAR STYLING (COLUMNS AND SPORT)
 /*
 BANNERS
 */
+
 .banner-wrapper {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -304,6 +431,7 @@ BANNERS
 .banner {
     margin: 0;
     padding: 1rem 2rem;
+    position: relative;
 }
 
 .banner .emoji-wrapper {
@@ -320,7 +448,7 @@ BANNERS
 
 .banner .text {
     display: table-cell;
-    font-family: "Playfair Display",sans-serif;
+    font-family: "Playfair Display",serif;
     font-weight: 500;
     font-style: italic;
 }
@@ -333,4 +461,33 @@ BANNERS
 .banner .text-sm {
     font-size: 1.25rem;
     padding-left: 2rem;
+}
+
+
+
+/*
+EDITOR'S PICKS SIDERBAR
+*/
+
+.editor-picks {
+    border-left: 2px solid #000;
+    position: relative;
+    padding: 0.5rem 2rem 0 2rem;
+}
+
+.editor-picks:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 2px;
+  right: 2px;
+  bottom: 0;
+  border-left: 1px solid #000;
+}
+
+.editor-picks > h1 {
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #999;
 }
