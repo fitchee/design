@@ -171,14 +171,14 @@ ARTICLE STYLING
 }
 
 .heading::before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 2px;
-  left: 0;
-  right: 0;
-  bottom: 2px;
-  border-bottom: 1px solid #000;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    border-bottom: 1px solid #000;
 }
 
 .article {
@@ -503,9 +503,8 @@ FULL ARTICLE
 }
 
 .full-article .img-wrapper {
-    /* position: relative; */
-    /* padding: 0; */
-    margin: 1rem 0 2rem 0;
+    margin: 1.25rem 0 1rem 0;
+    position: relative;
 }
 
 .full-article .img-wrapper > img {
@@ -514,30 +513,32 @@ FULL ARTICLE
     min-height: 30rem;
     height: 30vh;
     border-radius: 5px;
+    box-shadow: rgba(255,46,77, 0.65) 5px 5px, rgba(255,46,77, 0.2) 10px 10px, rgba(255,46,77, 0.1) 15px 15px;
+    background-color: rgb(255, 46, 77);
 }
 
 .full-article .headline-wrapper > .headline {
     font-weight: 700;
-    /* font-family: "Playfair Display"; */
     font-family: Jost;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    border-top: 2px solid #000;
+    padding-top: 1rem;
 }
 
-.full-article .headline-wrapper > .byline {
+.full-article .byline-wrapper > .byline {
     display: inline-block;
 }
 
-.full-article .headline-wrapper > .byline > .by {
+.full-article .byline-wrapper > .byline > .by {
     color: #fff;
     padding: 0.2rem 0.5rem;
     margin: 0 0.25rem;
     background-color: #ff1500;
-    /* border-radius: 2px; */
     text-decoration: none;
 }
 
-.full-article .headline-wrapper > .date {
+.full-article .byline-wrapper > .date {
     display: inline-block;
     float: right;
 }
@@ -546,8 +547,11 @@ FULL ARTICLE
     font-weight: 700;
     font-size: 1.3rem;
     border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     position: relative;
+    margin-top: 2rem;
 }
 
 .full-article .standfirst::before {
@@ -580,4 +584,71 @@ FULL ARTICLE
 
 .full-article .body-wrapper > .body > p.first {
     text-indent: 0;
+}
+
+.full-article .author {
+    margin: 1rem 0 2rem 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 0.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.full-article .author > .title {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #999;
+    font-family: "Jost",sans-serif;
+    font-weight: 500;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.full-article .author > .title::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 2px;
+    right: 0;
+    border-bottom: 1px solid #000;
+}
+
+.full-article .author .body,.full-article .author .links {
+    border-bottom: 1px solid #999;
+}
+
+.full-article .author .body .name {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.1rem;
+    padding: calc(1rem + 2px) 1.5rem;
+    border-bottom: 1px solid #999;
+    position: relative;
+}
+
+.full-article .author .description {
+    padding: 1rem 1.5rem;
+}
+
+.full-article .author .links {
+    padding: 1rem 1.5rem;
+}
+
+.full-article .author .links a {
+   text-decoration: none; 
+   color: #000;
+   margin: 0 0.4rem;
+}
+
+.full-article .img-wrapper .caption {
+    font-family: "Jost",sans-serif;
+    font-size: 0.9rem;
+    position: absolute;
+    background-color: #ffd615;
+    color: #000;
+    margin-left: 1rem;
+    max-width: 70%;
+    bottom: 1rem;
+    padding: 8px 12px 8px 12px;
+    border-radius: 0 0 0 5px;
 }
