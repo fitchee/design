@@ -183,7 +183,30 @@ ARTICLE STYLING
 
 .article {
     position: relative;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 0 1rem 0;
+    transition-duration: 0.5s;
+}
+
+.article-lg {
+    margin-bottom: 2rem;
+}
+
+.article .text-wrapper {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.article:hover {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+}
+
+.article:hover .img-wrapper > img {
+    border-radius: 5px 5px 0 0;
+}
+
+.article-sm-sideways:hover .img-wrapper > img {
+    border-radius: 5px 0 0 5px;
 }
 
 .article h1 {
@@ -197,12 +220,19 @@ ARTICLE STYLING
 }
 
 .article-lg .text-wrapper {
-    padding: 0 2rem 2rem 1rem;
+    padding: 0 2rem 1rem 2rem;
 }
 
 .article .img-wrapper {
     position: relative;
+}
+
+.article-lg .img-wrapper {
     margin-bottom: 2rem;
+}
+
+.article-sm .img-wrapper {
+    margin-bottom: 1.5rem;
 }
 
 .article img {
@@ -228,12 +258,6 @@ ARTICLE STYLING
     max-width: 70%;
     bottom: -1rem;
     padding: 8px 12px 8px 12px;
-}
-
-.article-sm .caption {
-    font-family: "Jost",sans-serif;
-    font-size: 0.9rem;
-    color: #000;
 }
 
 a.overlay {
@@ -292,6 +316,16 @@ a.overlay {
 
 .article-sm-sideways .subject-wrapper {
     text-align: right;
+    margin: 1rem 0;
+}
+
+.adverts-wrapper .article-sm-sideways {
+    margin: 0;
+}
+
+.adverts-wrapper .article-sm-sideways .text-wrapper {
+    margin: 1rem 1rem 1rem 0.4rem;
+    padding: 0 0 0 1rem;
 }
 
 
@@ -492,6 +526,10 @@ EDITOR'S PICKS SIDERBAR
     border-bottom: 1px solid #999;
 }
 
+.editor-picks .article-no-img.lead:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 
 
 /*
@@ -576,6 +614,36 @@ FULL ARTICLE
     position: absolute;
 }
 
+.full-article .categories-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.full-article .categories-wrapper .category {
+    display: inline-block;
+    margin: 0 0.5rem 0 1rem;
+    position: relative;
+}
+
+.full-article .categories-wrapper .category span {
+    background-color: rgba(255, 48, 79, 0.225);
+    color: #ff1500;
+    border-radius: 2rem;
+    padding: 0.65rem 1rem;
+    display: inline-block;
+    font-family: Jost;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    transition-delay: 0.05s;
+}
+
+.full-article .categories-wrapper .category .overlay:hover + span {
+    background-color: rgba(255, 48, 79, 0.4);
+    /* color: #fff; */
+    /* color: #000; */
+}
+
 .full-article .body-wrapper > .body > p {
     margin: 0;
     margin-top: 2rem;
@@ -651,4 +719,9 @@ FULL ARTICLE
     bottom: 1rem;
     padding: 8px 12px 8px 12px;
     border-radius: 0 0 0 5px;
+}
+
+.full-article .body .img-wrapper > img {
+    min-height: 20rem;
+    height: 40vh;
 }
